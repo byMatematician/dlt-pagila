@@ -1,0 +1,20 @@
+[project]
+name = "dlt-pagila"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kutbi", email = "kutbettinkizilkaya@outlook.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dlt[duckdb,gs,parquet,postgres,sql-database]>=1.30.0",
+    "psycopg[binary]>=3.3.6",
+]
+
+[project.scripts]
+dlt-pagila = "dlt_pagila:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
